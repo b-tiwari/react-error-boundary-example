@@ -1,0 +1,54 @@
+{
+	"name": "react-error-boundary-example",
+	"version": "1.0.0",
+	"description": "an example react application for Error Boundary feature available in React 16",
+	"main": "index.js",
+	"scripts": {
+		"test": "test",
+		"dev": "./node_modules/.bin/webpack-dev-server --config ./webpack/webpack.dev.config.js"
+	},
+	"keywords": [
+		"React",
+		"Error",
+		"Boundary"
+	],
+	"author": "B.Tiwari",
+	"license": "ISC",
+	"dependencies": {
+		"@babel/preset-react": "^7.0.0",
+		"bootstrap": "3",
+		"react": "^16.5.2",
+		"react-bootstrap": "^0.32.4",
+		"react-dom": "^16.5.2",
+		"react-numeric-input": "^2.2.3",
+		"webpack": "^4.19.1",
+		"webpack-dev-server": "^3.1.9"
+	},
+	"devDependencies": {
+		"@babel/core": "^7.1.0",
+		"@babel/plugin-proposal-class-properties": "^7.1.0",
+		"@babel/polyfill": "^7.0.0",
+		"@babel/preset-env": "^7.1.0",
+		"babel-cli": "^6.26.0",
+		"babel-core": "^6.26.3",
+		"babel-loader": "^8.0.2",
+		"babel-plugin-transform-object-rest-spread": "^6.26.0",
+		"babel-preset-react": "^6.24.1",
+		"babel-register": "^6.26.0",
+		"css-loader": "^1.0.0",
+		"less": "^3.8.1",
+		"less-loader": "^4.1.0",
+		"style-loader": "^0.23.0",
+		"webpack-cli": "^3.1.1"
+	},
+	"babel": {
+		"presets": [
+			"@babel/preset-env",
+			"@babel/preset-react"
+		],
+		"plugins": [
+			"@babel/plugin-proposal-class-properties",
+			"transform-object-rest-spread"
+		]
+	}
+}
