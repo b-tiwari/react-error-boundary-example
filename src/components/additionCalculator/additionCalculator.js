@@ -10,8 +10,7 @@ export class AdditionCalculator extends Component {
 		super(props);
 		this.state = {
 			number2: 1,
-			number1: 20,
-			dismissAnswerError: true
+			number1: 20
 		};
 	}
 
@@ -57,23 +56,6 @@ export class AdditionCalculator extends Component {
 	numericInputChange = valAsNumber => {
 		this.setState({
 			number2: valAsNumber
-		});
-	};
-
-	decrementDivisor = evnt => {
-		const val = evnt.target.value;
-		console.log(`Value = ${val}`);
-
-		this.setState({
-			number2: this.state.number2 - 1,
-			dismissAnswerError: true
-		});
-	};
-
-	incrementDivisor = evnt => {
-		this.setState({
-			number2: this.state.number2 + 1,
-			dismissAnswerError: true
 		});
 	};
 }
